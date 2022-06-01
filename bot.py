@@ -23,13 +23,13 @@ corpus = article.text
 #print(corpus)
 #Tokenization
 text = corpus
-#sentence_list = nltk.sent_tokenize(text, language='spanish')
+sentence_list = nltk.sent_tokenize(text, language='spanish')
 #sentence_list = tokenizer.tokenize(text)
-nlp = spacy.load("es_dep_news_trf")
-doc = nlp(text)
-sentence_list = [token.text for token in doc]
+#nlp = spacy.load("es_dep_news_trf")
+#doc = nlp(text)
+#sentence_list = [token.text for token in doc]
 #print(tokens)
-print(sentence_list)
+#print(sentence_list)
 
 
 def greeting_response(text):
